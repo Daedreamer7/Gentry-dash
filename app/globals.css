@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 180 4% 10%; /* #1B1B1B */
+    --foreground: 0 0% 90%; /* #E5E5E5 */
+    --card: 180 4% 10%;
+    --card-foreground: 0 0% 90%;
+    --popover: 180 4% 10%;
+    --popover-foreground: 0 0% 90%;
+    --primary: 0 0% 90%;
+    --primary-foreground: 180 4% 10%;
+    --secondary: 0 0% 30%; /* Graphite #4D4D4D */
+    --secondary-foreground: 0 0% 90%;
+    --muted: 0 0% 30%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 0 0% 30%;
+    --accent-foreground: 0 0% 90%;
+    --destructive: 0 100% 35%; /* Signal Red #B30000 */
+    --destructive-foreground: 0 0% 90%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 0 0% 90%;
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
